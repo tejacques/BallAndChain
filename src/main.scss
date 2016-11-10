@@ -1,0 +1,13 @@
+@import 'reset-css/reset.css';
+@import './colors/colors.scss';
+@import './menu/menu.scss';
+
+html {
+  background: $navy;
+}
+
+html,body {
+  margin: 0; 
+  padding: 0; 
+  height: 100%
+}

@@ -1,0 +1,26 @@
+{
+  "name": "BallAndChain",
+  "version": "1.0.0",
+  "description": "Wedding website",
+  "main": "index.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "reset-css": "^2.2.0",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tejacques/BallAndChain.git"
+  },
+  "author": "Tom Jacques <tejacques@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tejacques/BallAndChain/issues"
+  },
+  "homepage": "https://github.com/tejacques/BallAndChain"
+}
