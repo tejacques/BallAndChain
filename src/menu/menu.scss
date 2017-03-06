@@ -3,6 +3,7 @@ $lineWidth: 5px;
 $lineLength: 25px;
 $baseMargin: 8px;
 $animationDuration: .2s;
+$gold: #CFB53B;
 
 #hamburger {
   display: none;
@@ -38,7 +39,7 @@ $animationDuration: .2s;
     top: $baseMargin;
     width: $lineLength;
     height: $lineWidth;
-    background-color: #000;
+    background-color: $gold;
     position: relative;
     -webkit-transition-duration: 0;
     -moz-transition-duration: 0;
@@ -56,7 +57,7 @@ $animationDuration: .2s;
       position: absolute;
       width: $lineLength;
       height: $lineWidth;
-      background-color: #000;
+      background-color: $gold;
       -webkit-transition-property: margin, -webkit-transform;
       -webkit-transition-duration: $animationDuration;
       -moz-transition-duration: $animationDuration;
