@@ -1,14 +1,21 @@
 {
-  "name": "BallAndChain",
+  "name": "ball-and-chain",
   "version": "1.0.0",
   "description": "Wedding website",
   "main": "index.js",
   "dependencies": {
+    "reset-css": "^2.2.0"
   },
   "devDependencies": {
+    "autoprefixer": "^6.7.4",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^2.0.0-rc.3",
+    "node-sass": "^4.5.0",
     "reset-css": "^2.2.0",
-    "webpack": "^1.13.2",
-    "webpack-dev-server": "^1.16.1"
+    "sass-loader": "^6.0.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
