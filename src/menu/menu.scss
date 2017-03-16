@@ -1,19 +1,25 @@
+@import '../colors/colors.scss';
+
 /* Configuration Parameters */
-$lineWidth: 5px;
+$lineWidth: 3px;
 $lineLength: 25px;
 $baseMargin: 8px;
+$fadeDuration: .05s;
 $animationDuration: .2s;
-$gold: #CFB53B;
+//$gold: #C48F79;
+$gold: #C99999;
 
 #hamburger {
   display: none;
 }
 
 .menu {
-  display: block;
-  background-color: #AAA;
+  z-index: 1;
+  display: none;
+  background-color: $dark-navy;
   width: 0px;
   height: 100%;
+
   -webkit-transition-duration: $animationDuration;
   -moz-transition-duration: $animationDuration;
   -ms-transition-duration: $animationDuration;
@@ -27,9 +33,10 @@ $gold: #CFB53B;
 }
 
 .menuicon {
+  z-index: 1;
   position: absolute;
   top: 10px;
-  left: 10px;
+  right: 10px;
   display: block;
   cursor: pointer;
   height: $baseMargin*2 + $lineWidth;
@@ -46,11 +53,11 @@ $gold: #CFB53B;
     -ms-transition-duration: 0;
     -o-transition-duration: 0;
     transition-duration: 0;  
-    -webkit-transition-delay: $animationDuration;
-    -moz-transition-delay: $animationDuration;
-    -ms-transition-delay: $animationDuration;
-    -o-transition-delay: $animationDuration;
-    transition-delay: $animationDuration;
+    -webkit-transition-delay: $fadeDuration;
+    -moz-transition-delay: $fadeDuration;
+    -ms-transition-delay: $fadeDuration;
+    -o-transition-delay: $fadeDuration;
+    transition-delay: $fadeDuration;
     &::after, &::before {
       display: block;
       content: '';
@@ -80,11 +87,17 @@ $gold: #CFB53B;
 }
 
 #hamburger:checked ~ .menu {
-  width: 250px;
+  width: 100%;
+  display: block;
+  opacity: 0.95;
+  //position: absolute;
+  //top: 0;
+  //left: 0;
 }
 
 #hamburger:checked ~ .menuicon {
   span {
+    z-index: 1;
     background-color: rgba(0,0,0,0);
     &::before, &::after {
       margin-top: 0px;
