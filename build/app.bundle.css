@@ -46,15 +46,19 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }/* Predefined Colors */
+/* Predefined Colors */
 /* Configuration Parameters */
 #hamburger {
   display: none; }
 
 .menu {
-  display: block;
-  background-color: #AAA;
+  position: fixed;
+  left: 100%;
+  opacity: 0%;
+  background-color: #113;
   width: 0px;
   height: 100%;
+  line-height: 1.5em;
   -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
   -ms-transition-duration: 0.2s;
@@ -67,37 +71,41 @@ table {
   transition-delay: 0.2s; }
 
 .menuicon {
-  position: absolute;
+  background: #225;
+  border-radius: 50%;
+  box-shadow: 0px 1px 2px black;
+  z-index: 1;
+  position: fixed;
   top: 10px;
-  left: 10px;
+  right: 23px;
   display: block;
   cursor: pointer;
-  height: 21px;
-  width: 25px; }
+  height: 40px;
+  width: 40px; }
   .menuicon span {
     display: block;
-    top: 8px;
     width: 25px;
-    height: 5px;
-    background-color: #000;
+    height: 3px;
+    background-color: #C69460;
     position: relative;
     -webkit-transition-duration: 0;
     -moz-transition-duration: 0;
     -ms-transition-duration: 0;
     -o-transition-duration: 0;
     transition-duration: 0;
-    -webkit-transition-delay: 0.2s;
-    -moz-transition-delay: 0.2s;
-    -ms-transition-delay: 0.2s;
-    -o-transition-delay: 0.2s;
-    transition-delay: 0.2s; }
+    -webkit-transition-delay: 0.05s;
+    -moz-transition-delay: 0.05s;
+    -ms-transition-delay: 0.05s;
+    -o-transition-delay: 0.05s;
+    transition-delay: 0.05s; }
     .menuicon span::after, .menuicon span::before {
       display: block;
       content: '';
       position: absolute;
       width: 25px;
-      height: 5px;
-      background-color: #000;
+      height: 3px;
+      background-color: #C69460;
+      transition-property: margin;
       -webkit-transition-property: margin, -webkit-transform;
       -webkit-transition-duration: 0.2s;
       -moz-transition-duration: 0.2s;
@@ -115,9 +123,13 @@ table {
       margin-top: 8px; }
 
 #hamburger:checked ~ .menu {
-  width: 250px; }
+  width: 100%;
+  display: block;
+  opacity: 0.95;
+  left: 0; }
 
 #hamburger:checked ~ .menuicon span {
+  z-index: 2;
   background-color: transparent; }
   #hamburger:checked ~ .menuicon span::before, #hamburger:checked ~ .menuicon span::after {
     margin-top: 0px;
@@ -139,10 +151,163 @@ table {
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg); }
 
+*, *:before, *:after {
+  box-sizing: border-box; }
+
 html {
-  background: #229; }
+  background: #225; }
 
 html, body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  font-family: 'Playfair Display', Cambria, Cochin, Georgia, Times, Times New Roman, serif; }
+
+a {
+  color: #C69460; }
+
+.menu {
+  font-size: 2em;
+  color: #C69460; }
+  .menu a {
+    color: inherit;
+    text-decoration: none; }
+
+.overflow-scroll {
+  overflow: scroll; }
+
+.overflow-auto {
+  overflow: auto; }
+
+.full-height {
   height: 100%; }
+
+header {
+  z-index: -2;
+  background-image: url("/img/frontpage-color.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 33%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative; }
+  header .names {
+    position: absolute;
+    font-size: 4em;
+    text-shadow: 1px 0px 0px black;
+    font-family: 'Rochester', cursive;
+    color: #C69460;
+    float: right;
+    top: 5%;
+    left: 5%;
+    text-align: right; }
+
+section {
+  padding: 10px 10px 60px 10px;
+  margin: 50px 50px;
+  overflow: hidden; }
+  section h1 {
+    font-family: 'Rochester', cursive;
+    color: #C69460;
+    text-align: center;
+    font-size: 2.5em;
+    padding: 50px; }
+  section h3 {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px; }
+  section p {
+    line-height: 1.25; }
+
+.center {
+  text-align: center; }
+
+.vertical-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.full-center {
+  top: 50%;
+  left: 50%;
+  transform: translatex(-50%) translateY(-50%); }
+
+.clear {
+  display: inline-block;
+  text-align: left; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.pad {
+  padding: 7%; }
+
+.fixed-height-100 {
+  height: 100px; }
+
+.fixed-height-150 {
+  height: 150px; }
+
+.white-bg {
+  background-color: #EEE;
+  background-image: url("/img/paper_fibers.png"); }
+
+.navy-bg {
+  color: #FFF; }
+
+.circle-photo {
+  text-align: center;
+  margin: 10px 0px;
+  padding: 10px 0px; }
+  .circle-photo img {
+    height: auto;
+    max-height: 400px;
+    width: 400px;
+    max-width: 80%;
+    border: 4px solid #C69460;
+    border-radius: 50%; }
+  .circle-photo .description {
+    margin: 10px 0px;
+    font-size: 1.5em; }
+    .circle-photo .description .role {
+      font-size: 0.75em; }
+
+.split {
+  float: left;
+  width: 50%; }
+
+.width-two-thirds {
+  width: 67%; }
+
+.width-half {
+  width: 50%; }
+
+.clearfix::after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both; }
+
+.proposal img {
+  height: auto;
+  width: 90%;
+  max-width: 400px; }
+
+.link div {
+  padding: 10px;
+  margin: 10px; }
+
+.link a {
+  padding: 5px 10px;
+  color: #C69460;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.75em;
+  border: 2px solid #C69460;
+  letter-spacing: 2px;
+  text-decoration: none; }
+
+.link a:hover {
+  color: white;
+  background-color: #C69460; }
