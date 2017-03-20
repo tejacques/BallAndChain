@@ -12,13 +12,15 @@ $animationDuration: .2s;
 }
 
 .menu {
+  position: fixed;
   //z-index: 1;
-  //left: 100%;
-  display: none;
+  left: 100%;
+  //display: none;
+  opacity: 0%;
   background-color: $dark-navy;
   width: 0px;
   height: 100%;
-
+  line-height: 1.5em;
   -webkit-transition-duration: $animationDuration;
   -moz-transition-duration: $animationDuration;
   -ms-transition-duration: $animationDuration;
@@ -32,17 +34,23 @@ $animationDuration: .2s;
 }
 
 .menuicon {
+  background: $navy;
+  border-radius: 50%;
+  box-shadow: 0px 1px 2px black;
+
   z-index: 1;
   position: fixed;
   top: 10px;
-  right: 10px;
+  right: 23px;
   display: block;
   cursor: pointer;
-  height: $baseMargin*2 + $lineWidth;
-  width: $lineLength;
+  height: 40px;
+  width: 40px;
+  //height: $baseMargin*2 + $lineWidth;
+  //width: $lineLength;
   span {
     display: block;
-    top: $baseMargin;
+    //top: $baseMargin;
     width: $lineLength;
     height: $lineWidth;
     background-color: $gold;
@@ -64,6 +72,7 @@ $animationDuration: .2s;
       width: $lineLength;
       height: $lineWidth;
       background-color: $gold;
+      transition-property: margin;
       -webkit-transition-property: margin, -webkit-transform;
       -webkit-transition-duration: $animationDuration;
       -moz-transition-duration: $animationDuration;
@@ -86,10 +95,10 @@ $animationDuration: .2s;
 }
 
 #hamburger:checked ~ .menu {
+  
   width: 100%;
   display: block;
   opacity: 0.95;
-  position: fixed;
   //top: 0;
   left: 0;
 }

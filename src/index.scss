@@ -14,9 +14,39 @@ html,body {
   margin: 0; 
   padding: 0; 
   height: 100%;
+  font-family: 'Playfair Display', Cambria, Cochin, Georgia, Times, Times New Roman, serif;
 }
 
-.header {
+body {
+  //overflow: auto;
+}
+
+a {
+  color: $gold;
+}
+
+.menu {
+  font-size: 2em;
+  color: $gold;
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.full-height {
+  height: 100%;
+}
+
+header {
   z-index: -2;
   background-image: url("/img/frontpage-color.jpg");
   background-repeat: no-repeat;
@@ -36,30 +66,26 @@ html,body {
     top: 5%;
     left: 5%;
     text-align: right;
-    .bride-name {
-      padding-right: 15%;
-    }
   }
 }
 
 section {
-  padding: 10px;
+  padding: 10px 10px 60px 10px;
   margin: 50px 50px;
   overflow: hidden;
-  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
 
   h1 {
     font-family: 'Rochester', cursive;
     color: $gold;
     text-align: center;
     font-size: 2.5em;
-    margin: 50px;
+    padding: 50px;
   }
 
   h3 {
     text-align: center;
     font-size: 1.5em;
-    margin: 10px;
+    padding: 10px;
   }
 
   p {
@@ -69,6 +95,18 @@ section {
 
 .center {
   text-align: center;
+}
+
+.vertical-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.full-center {
+  top: 50%;
+  left: 50%;
+  transform: translatex(-50%) translateY(-50%);
 }
 
 .clear {
@@ -84,8 +122,17 @@ section {
   padding: 7%;
 }
 
+.fixed-height-100 {
+  height: 100px;
+}
+
+.fixed-height-150 {
+  height: 150px;
+}
+
 .white-bg {
   background-color: #EEE;
+  background-image: url("/img/paper_fibers.png");
 }
 
 .navy-bg {
@@ -97,6 +144,7 @@ section {
   margin: 10px 0px;
   padding: 10px 0px;
   img {
+    height: auto;
     max-height: 400px;
     width: 400px;
     max-width: 80%;
@@ -106,15 +154,11 @@ section {
 
   .description {
     margin: 10px 0px;
-
+    font-size: 1.5em;
     .role {
-
+      font-size: 0.75em;
     }
   }
-}
-
-.wedding-party {
-  
 }
 
 .split {
@@ -142,5 +186,26 @@ section {
     height: auto;
     width: 90%;
     max-width: 400px;
+  }
+}
+
+.link {
+  div {
+    padding: 10px;
+    margin: 10px;
+  }
+  a {
+    padding: 5px 10px;
+    color: $gold;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.75em;
+    border: 2px solid $gold;
+    letter-spacing: 2px;
+    text-decoration: none;
+  }
+  a:hover {
+    color: white;
+    background-color: $gold;
   }
 }
