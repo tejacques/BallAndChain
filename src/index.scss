@@ -2,6 +2,10 @@
 @import './colors/colors.scss';
 @import './menu/menu.scss';
 
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 html {
   background: $navy;
 }
@@ -12,18 +16,131 @@ html,body {
   height: 100%;
 }
 
-.menu-container {
-  position: fixed;
+.header {
+  z-index: -2;
+  background-image: url("/img/frontpage-color.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 33%;
   height: 100%;
   width: 100%;
-  //z-index: -1;
+  overflow: hidden;
+  position: relative;
+  .names {
+    position: absolute;
+    font-size: 4em;
+    text-shadow: 1px 0px 0px black;
+    font-family: 'Rochester', cursive;
+    color: $gold;
+    float: right;
+    top: 5%;
+    left: 5%;
+    text-align: right;
+    .bride-name {
+      padding-right: 15%;
+    }
+  }
 }
 
 section {
   padding: 10px;
-  margin: 15px 50px;
+  margin: 50px 50px;
+  overflow: hidden;
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+
+  h1 {
+    font-family: 'Rochester', cursive;
+    color: $gold;
+    text-align: center;
+    font-size: 2.5em;
+    margin: 50px;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 10px;
+  }
+
+  p {
+    line-height: 1.25;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.clear {
+  display: inline-block;
+  text-align: left;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.pad {
+  padding: 7%;
 }
 
 .white-bg {
   background-color: #EEE;
+}
+
+.navy-bg {
+  color: #FFF;
+}
+
+.circle-photo {
+  text-align: center;
+  margin: 10px 0px;
+  padding: 10px 0px;
+  img {
+    max-height: 400px;
+    width: 400px;
+    max-width: 80%;
+    border: 4px solid $gold;
+    border-radius: 50%;
+  }
+
+  .description {
+    margin: 10px 0px;
+
+    .role {
+
+    }
+  }
+}
+
+.wedding-party {
+  
+}
+
+.split {
+  float: left;
+  width: 50%;
+}
+
+.width-two-thirds {
+  width: 67%;
+}
+
+.width-half {
+  width: 50%;
+}
+
+.clearfix::after { 
+   content: " ";
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+.proposal {
+  img {
+    height: auto;
+    width: 90%;
+    max-width: 400px;
+  }
 }

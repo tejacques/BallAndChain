@@ -7,6 +7,7 @@
     <meta name="description" content="Natasha Rimba &amp; Tom Jacques's Wedding Website">
     <meta name="author" content="tejacques">
     <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet">
     <title>Natasha Rimba &amp; Tom Jacques</title>
 
     <!-- Analytics -->
@@ -18,120 +19,150 @@
 </head>
 <body>
 
-    <div class="menu-container">
-        <input type="checkbox" id="hamburger"/>
-        <label class="menuicon" for="hamburger">
-            <span></span>
-        </label>
-        <div class="menu">
-            <div><a href="#ceremony">Ceremony</a></div>
-            <div><a href="#events">Events</a></div>
-            <div><a href="#attire">Attire</a></div>
-            <div><a href="#wedding-party">Wedding Party</a></div>
-            <div><a href="#proposal">The Proposal</a></div>
-            <div><a href="#registry">Registry</a></div>
-            <div><a href="#accomodations">Accomodations</a></div>
-            <div><a href="#photos">Photos</a></div>
+    <input type="checkbox" id="hamburger"/>
+    <label class="menuicon" for="hamburger">
+        <span></span>
+    </label>
+    <div class="menu">
+        <div><a href="#ceremony">Ceremony</a></div>
+        <div><a href="#events">Events</a></div>
+        <div><a href="#attire">Attire</a></div>
+        <div><a href="#wedding-party">Wedding Party</a></div>
+        <div><a href="#proposal">The Proposal</a></div>
+        <div><a href="#registry">Registry</a></div>
+        <div><a href="#accomodations">Accomodations</a></div>
+    </div>
+
+    <div class="header">
+        <div class="names">
+            <div class="bride-name">Natasha &</div>
+            <div class="groom-name">Thomas</div>
         </div>
     </div>
 
-    <header>
-        
-    </header>
-
     <section class="events white-bg">
         <div class="title"><h1><a name="events">Events</a></h1></div>
-        <span>
-            <h3><a name="ceremony">Wedding Ceremony</a></h3>
-            <p>Saint Patrick's Cathedral.</p>
-            <p>Fifth Avenue and 51st St. New York, NY, 10111</p>
-            <p>3:00 PM, April 29th, 2017</p>
-            <p>Please enter from the fifth avenue entrance.</p>
+        <span class="split">
+            <h3 class="uppercase"><a name="ceremony">Wedding Ceremony</a></h3>
+            <div class="pad">
+                <p>Saint Patrick's Cathedral.</p>
+                <p>Fifth Avenue and 51st St. New York, NY, 10111</p>
+                <p>3:00 PM, April 29th, 2017</p>
+                <p>Please enter from the fifth avenue entrance.</p>
+            </div>
         </span>
 
-        <span>
-            <h3><a name="venue">Reception</a></h3>
-            <p>W New York - Union Square</p>
-            <p>201 Park Ave South, New York, NY 10003</p>
-            <p>6:00 PM, April 29th, 2017</p>
-            <p>Black Tie</p>
+        <span class="split">
+            <h3 class="uppercase"><a name="venue">Reception</a></h3>
+            <div class="pad">
+                <p>W New York - Union Square</p>
+                <p>201 Park Ave South, New York, NY 10003</p>
+                <p>6:00 PM, April 29th, 2017</p>
+                <p>Black Tie</p>
+            </div>
         </span>
     </section>
 
-    <section class="attire white-bg">
+    <section class="attire navy-bg">
         <div class="title"><h1><a name="attire">Black Tie</a></h1></div>
-        <span class="left">
-            <div>Ladies</div>
-            <div>Ballgown or evening gown</div>
-            <div>Rental/Purchase Examples</div>
-            <div class="link">
-                <a href="https://www.renttherunway.com/products/dress?filters[formality][]=black_tie&?act_type=gridsidebar">Rent The Runway</a>
-                <a href="http://www.bhldn.com/dresses-view-all-dresses-long/?cm_sp=LEFTNAV-_-SUB_CATEGORY-_-DRESSES_VIEWALL_LONG">BHLDN</a>
-                <a href="http://www.saksfifthavenue.com/Women-s-Apparel/Formal-and-Evening/shop/_/N-52k8u2/Ne-6lvnb5?FOLDER%3C%3Efolder_id=2534374306634682">Sak's Fifth Avenue</a>
-            </div>
+        <span class="split">
+            <h3 class="uppercase">Ladies</h3>
+            <div class="pad">
+                <p>Ballgown or evening gown</p>
+                <p>Rental/Purchase Examples</p>
+                <div class="link">
+                    <a href="https://www.renttherunway.com/products/dress?filters[formality][]=black_tie&?act_type=gridsidebar">Rent The Runway</a>
+                    <a href="http://www.bhldn.com/dresses-view-all-dresses-long/?cm_sp=LEFTNAV-_-SUB_CATEGORY-_-DRESSES_VIEWALL_LONG">BHLDN</a>
+                    <a href="http://www.saksfifthavenue.com/Women-s-Apparel/Formal-and-Evening/shop/_/N-52k8u2/Ne-6lvnb5?FOLDER%3C%3Efolder_id=2534374306634682">Sak's Fifth Avenue</a>
+                </div>
             </div>
         </span>
-        <span class="right">
-            <div>Gentlemen</div>
-            <div>Tuxedo</div>
-            <div>Rental Options</div>
-            <div class="link">
-                <a href="https://theblacktux.com/">The Black Tux</a>
-                <a href="https://www.menguin.com/">Menguin</a>
+        <span class="split">
+            <h3 class="uppercase">Gentlemen</h3>
+            <div class="pad">
+                <p>Tuxedo</p>
+                <p>Rental Options</p>
+                <div class="link">
+                    <a href="https://theblacktux.com/">The Black Tux</a>
+                    <a href="https://www.menguin.com/">Menguin</a>
+                </div>
             </div>
         </span>
     </section>
     <section class="wedding-party white-bg">
-        <h3><a name="wedding-party">Wedding Party</a></h3>
-        <span class="bridesmaids">
+        <h1><a name="wedding-party">Wedding Party</a></h1>
+        <span class="split clearfix">
             <div class="circle-photo">
-                <img src="/img/catherine.png"/>
-                <div class="role"><span>Maid of Honor<span></div>
-                <div><span>Catherine Hall<span></div>
+                <img src="/img/catherine.jpg"/>
+                <div class="description">
+                    <div><span>Catherine Hall<span></div>
+                    <div class="role"><span>Maid of Honor<span></div>
+                </div>
             </div>
             <div class="circle-photo">
                 <img src="/img/celine.jpg"/>
-                <div><span>Celine Tokat<span></div>
+                <div class="description">
+                    <div><span>Celine Tokat<span></div>
+                </div>
             </div>
             <div class="circle-photo">
-                <img src="/img/chloe.png"/>
-                <div><span>Chloe Jacques<span></div>
+                <img src="/img/chloe.jpg"/>
+                <div class="description">
+                    <div><span>Chloe Jacques<span></div>
+                </div>
             </div>
         </span>
-        <span class="groomsman">
+        <span class="split">
             <div class="circle-photo">
-                <img src="/img/eddie.png"/>
-                <div class="role"><span>Best Man<span></div>
-                <div class="name"><span>Eddie Ng<span></div>
+                <img src="/img/eddie.jpg"/>
+                <div class="description">
+                    <div class="name"><span>Eddie Ng<span></div>
+                    <div class="role"><span>Best Man<span></div>
+                </div>
             </div>
             <div class="circle-photo">
                 <img src="/img/anson.jpg"/>
-                <div><span>Anson Wang<span></div>
+                <div class="description">
+                    <div><span>Anson Wang<span></div>
+                </div>
             </div>
             <div class="circle-photo">
-                <img src="/img/john.png"/>
-                <div><span>John Jacques<span></div>
+                <img src="/img/john.jpg"/>
+                <div class="description">
+                    <div><span>John Jacques<span></div>
+                </div>
             </div>
             <div class="circle-photo">
-                <img src="/img/tamir.png"/>
-                <div><span>Tamir Sen<span></div>
+                <img src="/img/tamir.jpg"/>
+                <div class="description">
+                    <div><span>Tamir Sen<span></div>
+                </div>
             </div>
         </span>
     </section>
-    <section class="proposal white-bg">
-        <h3><a name="proposal">The Proposal</a></h3>
-        <p>After six wonderful years together, on a crisp evening December 20, 2015, after dining at Eleven Madison Park, Natasha and Thomas were asked if they would like to have a private tour of the kitchen for the final dessert of apple caramel drizzled over shaved ice.</p>
-        <p>Next they were escorted to a table at the back, and by the dim glow of candelight to the tune of When I fall in Love by Nat King Cole Natasha's Photo album highlighting their years together was brought to the table. As Natasha began to realize what was going on, Thomas got down on one knee and asked for her hand in marriage.</p>
+    <section class="proposal navy-bg">
+        <h1><a name="proposal">The Proposal</a></h1>
+        <span class="split center">
+            <img src="/img/proposal.jpg" />
+        </span>
+        <span class="split">
+            <div style="width: 75%">
+                <p>After six wonderful years together, on a crisp evening December 20, 2015, after dining at Eleven Madison Park, Natasha and Thomas were asked if they would like to have a private tour of the kitchen for the final dessert of apple caramel drizzled over shaved ice.</p>
+                <br />
+                <p>Next they were escorted to a table at the back, and by the dim glow of candelight to the tune of "When I fall in Love" by Nat King Cole Natasha's Photo album highlighting their years together was brought to the table. As Natasha began to realize what was going on, Thomas got down on one knee and asked for her hand in marriage.</p>
+            </div>
+        </span>
     </section>
     <section class="registry white-bg">
-        <h3><a name="registry">Registry</a></h3>
-        <p>In lieu of a registry, the Bride and Groom are following the customary Chinese-Indonesian Tradition of accepting <a href="https://en.wikipedia.org/wiki/Red_envelope">Hóngbāo (Red Envelopes)</a>.</p>
+        <h1><a name="registry">Registry</a></h1>
+        <div class="center">
+            <div class="width-two-thirds clear">
+                <p>In lieu of a registry, the Bride and Groom are following the customary Chinese-Indonesian Tradition of accepting <a href="https://en.wikipedia.org/wiki/Red_envelope">Hóngbāo (Red Envelopes)</a>.</p>
+            </div>
+        </div>
     </section>
-    <section class="accomodations white-bg">
-        <h3><a name="accomodations">Things to do in the area.</a></h3>
-    </section>
-    <section class="photos">
-        <h3><a name="photos">Photos</a></h3>
+    <section class="accomodations navy-bg">
+        <h1><a name="accomodations">Accomodations</a></h1>
     </section>
 </body>
 </html>
