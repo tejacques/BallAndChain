@@ -2,6 +2,7 @@
 @import './colors/colors.scss';
 @import './menu/menu.scss';
 @import '~aos/dist/aos.css';
+@import './slideshow/slideshow.scss';
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -68,15 +69,12 @@ a {
 
 header {
   z-index: -2;
-  background-image: url("/img/frontpage-color.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center 33%;
   height: 100%;
   width: 100%;
   overflow: hidden;
   position: relative;
   .names {
+    z-index: 10;
     position: absolute;
     font-size: 4em;
     text-shadow: 1px 0px 0px black;
