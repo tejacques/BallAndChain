@@ -1,6 +1,7 @@
 @import '~reset-css/reset.css';
 @import './colors/colors.scss';
 @import './menu/menu.scss';
+@import '~aos/dist/aos.css';
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -14,11 +15,8 @@ html,body {
   margin: 0; 
   padding: 0; 
   height: 100%;
-  font-family: 'Playfair Display', Cambria, Cochin, Georgia, Times, Times New Roman, serif;
-}
-
-body {
-  //overflow: auto;
+  font-family: 'Helvetica Nueue', Helvetica, Arial, sans-serif;
+  color: #47435b;
 }
 
 a {
@@ -28,6 +26,7 @@ a {
 .menu {
   font-size: 2em;
   color: $gold;
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
   a {
     color: inherit;
     text-decoration: none;
@@ -35,11 +34,32 @@ a {
 }
 
 .overflow-scroll {
-  overflow: scroll;
+  //overflow: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 .overflow-auto {
-  overflow: auto;
+  //overflow: auto;
+}
+
+.fixed-height-100 {
+  height: 100px;
+}
+
+@media (max-width: 800px) {
+  .fixed-height-100 {
+    height: 50px;
+  }
+}
+
+.fixed-height-150 {
+  height: 150px;
+}
+
+@media (max-width: 800px) {
+  .fixed-height-150 {
+    height: 125px;
+  }
 }
 
 .full-height {
@@ -71,7 +91,7 @@ header {
 
 section {
   padding: 10px 10px 60px 10px;
-  margin: 50px 50px;
+  margin: 50px 0px;
   overflow: hidden;
 
   h1 {
@@ -83,6 +103,7 @@ section {
   }
 
   h3 {
+    font-family: 'Playfair Display', Cambria, Cochin, Georgia, Times, Times New Roman, serif;
     text-align: center;
     font-size: 1.5em;
     padding: 10px;
@@ -95,6 +116,10 @@ section {
 
 .center {
   text-align: center;
+  p {
+    max-width: 500px;
+    margin: auto;
+  }
 }
 
 .vertical-center {
@@ -122,14 +147,6 @@ section {
   padding: 7%;
 }
 
-.fixed-height-100 {
-  height: 100px;
-}
-
-.fixed-height-150 {
-  height: 150px;
-}
-
 .white-bg {
   background-color: #EEE;
   background-image: url("/img/paper_fibers.png");
@@ -137,6 +154,27 @@ section {
 
 .navy-bg {
   color: #FFF;
+}
+
+.event-photo {
+  margin: 10px 0px;
+  img {
+    height: auto;
+    max-height: 400px;
+    width: 700px;
+    max-width: 80%;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+  }
+  img:hover {
+    //background-color: white;
+    //opacity: .65;
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
 }
 
 .circle-photo {
@@ -149,21 +187,37 @@ section {
     width: 400px;
     max-width: 80%;
     border: 4px solid $gold;
+    background-color: $gold;
     border-radius: 50%;
   }
 
   .description {
     margin: 10px 0px;
-    font-size: 1.5em;
+    line-height: 1.5em;
     .role {
       font-size: 0.75em;
     }
   }
+
+  @media (min-width: 800px) {
+    .description {
+      font-size: 1.5em;
+    }
+  }
 }
 
+
+
 .split {
-  float: left;
-  width: 50%;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 800px) {
+  .split {
+    float: left;
+    width: 50%;
+  }
 }
 
 .width-two-thirds {
@@ -172,6 +226,14 @@ section {
 
 .width-half {
   width: 50%;
+}
+
+.width-full {
+  width: 100%;
+}
+
+.width-max-500 {
+  max-width: 500px;
 }
 
 .clearfix::after { 
@@ -201,11 +263,52 @@ section {
     font-weight: 700;
     font-size: 0.75em;
     border: 2px solid $gold;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-decoration: none;
   }
   a:hover {
     color: white;
     background-color: $gold;
   }
+}
+
+
+.circle-photo img {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
 }

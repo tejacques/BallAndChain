@@ -4,7 +4,9 @@
   "description": "Wedding website",
   "main": "index.js",
   "dependencies": {
-    "reset-css": "^2.2.0"
+    "aos": "^2.1.1",
+    "reset-css": "^2.2.0",
+    "wow.js": "^1.2.2"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.4",
