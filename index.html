@@ -13,6 +13,13 @@
     <!-- Analytics -->
 
     <!-- Inline Critical CSS -->
+    <style>
+        @font-face {
+            font-family: 'Qaskin Black';
+            src: url(/fonts/qaskin-black.ttf);
+        }
+
+    </style>
 
     <!-- Asynchronous Scripts / CSS -->
     <link rel="stylesheet" type="text/css" href="/build/app.bundle.css">
@@ -38,9 +45,9 @@
 
     <div class="full-height overflow-auto">
     <header>
-        <div class="names">
-            <div class="bride-name">Natasha &</div>
-            <div class="groom-name">Thomas</div>
+        <div class="names gold-text">
+            <h1 class="bride-name" data-text="Natasha &">Natasha &</h1>
+            <h1 class="groom-name" data-text="Thomas">Thomas</h1>
         </div>
         <div class="crossfade">
             <figure></figure>
@@ -53,7 +60,8 @@
 
     <section class="events navy-bg">
         <div class="title"><a name="events"><h1>Events</h1></a></div>
-        <div class="split margin-bottom-50">
+        <div class="split content-right padding-right-50 margin-bottom-50">
+            <div class="">
             <a name="ceremony"><h3 class="uppercase">Wedding Ceremony</h3></a>
             <div class="center event-photo margin-bottom-50">
                 <a href="https://saintpatrickscathedral.org/" target="_blank" rel="noopener noreferrer"><img src="/img/saint-patricks.jpg" width="940" height="529"/></a>
@@ -69,9 +77,11 @@
             <div class="link center">
                 <p><a href="https://www.google.com/maps/place/5th+Ave+%26+E+51st+St,+New+York,+NY+10022/@40.759171,-73.9789255,17z/data=!3m1!4b1!4m5!3m4!1s0x89c258fbf8ab777d:0x1ab3d841d29d7000!8m2!3d40.759167!4d-73.9767368" target="_blank" rel="noopener noreferrer">Map</a></a>
             </div>
+            </div>
         </div>
 
-        <div class="split">
+        <div class="split content-left padding-left-50">
+            <div>
             <a name="venue"><h3 class="uppercase">Reception</h3></a>
             <div class="center event-photo margin-bottom-50">
                 <a href="http://www.wnewyorkunionsquare.com/" target="_blank" rel="noopener noreferrer"><img src="/img/w-union-square.jpg" width="940" height="529"/></a>
@@ -87,42 +97,47 @@
             <div class="link center">
                 <p><a href="https://www.google.com/maps/place/W+New+York+-+Union+Square/@40.736583,-73.9907917,17z/data=!3m1!4b1!4m5!3m4!1s0x89c259a1f97f7da5:0x9ea669de2b4c239d!8m2!3d40.736579!4d-73.988603" target="_blank" rel="noopener noreferrer">Map</a></a>
             </div>
+            </div>
         </div>
     </section>
 
     <section class="attire white-bg">
         <div class="title"><a name="attire"><h1>Black Tie</h1></a></div>
-        <div class="split center margin-bottom-50">
-            <h3 class="uppercase">Ladies</h3>
-            <div class="clear fixed-height-100">
-                <p>A night for you to look your most gorgeous! Embrace it and have fun. Wear a long formal gown, ballgown, or a cocktail dress.</p>
-            </div>
-            <div class="link">
-                <p>Inspiration</p>
-                <div><a href="https://www.renttherunway.com/products/dress?filters[formality][]=black_tie&?act_type=gridsidebar" target="_blank" rel="noopener noreferrer"
->Rent The Runway</a></div>
-                <div><a href="http://www.bhldn.com/dresses-view-all-dresses-long/?cm_sp=LEFTNAV-_-SUB_CATEGORY-_-DRESSES_VIEWALL_LONG" target="_blank" rel="noopener noreferrer"
->BHLDN</a></div>
-                <div><a href="http://www.saksfifthavenue.com/Women-s-Apparel/Formal-and-Evening/shop/_/N-52k8u2/Ne-6lvnb5?FOLDER%3C%3Efolder_id=2534374306634682" target="_blank" rel="noopener noreferrer"
->Sak's Fifth Avenue</a></div>
+        <div class="split content-right padding-right-50 margin-bottom-50">
+            <div class="center">
+                <h3 class="uppercase">Ladies</h3>
+                <div class="clear width-two-thirds fixed-height-100">
+                    <p>A night for you to look your most gorgeous! Embrace it and have fun. Wear a long formal gown, ballgown, or a cocktail dress.</p>
+                </div>
+                <div class="link">
+                    <p>Inspiration</p>
+                    <div><a href="https://www.renttherunway.com/products/dress?filters[formality][]=black_tie&?act_type=gridsidebar" target="_blank" rel="noopener noreferrer"
+    >Rent The Runway</a></div>
+                    <div><a href="http://www.bhldn.com/dresses-view-all-dresses-long/?cm_sp=LEFTNAV-_-SUB_CATEGORY-_-DRESSES_VIEWALL_LONG" target="_blank" rel="noopener noreferrer"
+    >BHLDN</a></div>
+                    <div><a href="http://www.saksfifthavenue.com/Women-s-Apparel/Formal-and-Evening/shop/_/N-52k8u2/Ne-6lvnb5?FOLDER%3C%3Efolder_id=2534374306634682" target="_blank" rel="noopener noreferrer"
+    >Sak's Fifth Avenue</a></div>
+                </div>
             </div>
         </div>
-        <div class="split center margin-bottom-50">
-            <h3 class="uppercase">Gentlemen</h3>
-            <div class="clear fixed-height-100">
-                <p>Channel your inner James Bond for a sophistocated look in classic black tie. Wear a tudexo jacket, matching trousers, black bow tie and shoes.</p>
-            </div>
-            <div class="link">
-                <p>Inspiration</p>
-                <div><a href="https://theblacktux.com/">The Black Tux</a></div>
-                <div><a href="https://www.menguin.com/">Menguin</a></div>
+        <div class="split content-left padding-left-50 margin-bottom-50">
+            <div class="center">
+                <h3 class="uppercase">Gentlemen</h3>
+                <div class="clear width-two-thirds fixed-height-100">
+                    <p>Channel your inner James Bond for a sophistocated look in classic black tie. Wear a tudexo jacket, matching trousers, black bow tie and shoes.</p>
+                </div>
+                <div class="link">
+                    <p>Inspiration</p>
+                    <div><a href="https://theblacktux.com/">The Black Tux</a></div>
+                    <div><a href="https://www.menguin.com/">Menguin</a></div>
+                </div>
             </div>
         </div>
     </section>
     <section class="wedding-party navy-bg">
         <a name="wedding-party"><h1>Wedding Party</h1></a>
-        <div class="split clearfix margin-bottom-50">
-            <h3 class="uppercase">Bridesmaids</h3>
+        <div class="split clearfix margin-bottom-50 content-right padding-right-50">
+            <h3 class="uppercase width-400">Bridesmaids</h3>
             <div class="circle-photo" data-aos="fade-up" data-aos-duration="1000">
                 <img src="/img/catherine.jpg" width="400" height="400"/>
                 <div class="description">
@@ -130,41 +145,41 @@
                     <div class="role"><span>Maid of Honor<span></div>
                 </div>
             </div>
-            <div class="circle-photo" data-aos="fade-up" data-aos-duration="2000">
+            <div class="circle-photo" data-aos="fade-up" data-aos-duration="1000">
                 <img src="/img/celine.jpg" width="400" height="400"/>
                 <div class="description">
                     <div><span>Celine Tokat<span></div>
                 </div>
             </div>
-            <div class="circle-photo" data-aos="fade-up" data-aos-duration="2000">
+            <div class="circle-photo" data-aos="fade-up" data-aos-duration="1000">
                 <img src="/img/chloe.jpg" width="400" height="400"/>
                 <div class="description">
                     <div><span>Chloe Jacques<span></div>
                 </div>
             </div>
         </div>
-        <div class="split">
-            <h3 class="uppercase">Groomsmen</h3>
-            <div class="circle-photo" data-aos="fade-up" data-aos-duration="2000">
+        <div class="split content-left padding-left-50">
+            <h3 class="uppercase width-400">Groomsmen</h3>
+            <div class="circle-photo" data-aos="fade-up" data-aos-duration="1000">
                 <img src="/img/eddie.jpg" width="400" height="400"/>
                 <div class="description">
                     <div class="name"><span>Eddie Ng<span></div>
                     <div class="role"><span>Best Man<span></div>
                 </div>
             </div>
-            <div class="circle-photo" data-aos="fade-up" data-aos-duration="2000">
+            <div class="circle-photo" data-aos="fade-up" data-aos-duration="1000">
                 <img src="/img/anson.jpg" width="400" height="400"/>
                 <div class="description">
                     <div><span>Anson Wang<span></div>
                 </div>
             </div>
-            <div class="circle-photo" data-aos="fade-up" data-aos-duration="2000">
+            <div class="circle-photo" data-aos="fade-up" data-aos-duration="1000">
                 <img src="/img/john.jpg" width="400" height="400"/>
                 <div class="description">
                     <div><span>John Jacques<span></div>
                 </div>
             </div>
-            <div class="circle-photo" data-aos="fade-up" data-aos-duration="2000">
+            <div class="circle-photo" data-aos="fade-up" data-aos-duration="1000">
                 <img src="/img/tamir.jpg" width="400" height="400"/>
                 <div class="description">
                     <div><span>Tamir Sen<span></div>
@@ -174,14 +189,18 @@
     </section>
     <section class="proposal white-bg">
         <a name="proposal"><h1>The Proposal</h1></a>
-        <div class="split center margin-bottom-50">
-            <img src="/img/proposal.jpg" />
+        <div class="split margin-bottom-50 content-right padding-right-50">
+            <div class="center">
+                <img src="/img/proposal.jpg" />
+            </div>
         </div>
-        <div class="split center">
-            <div class="clear width-two-thirds">
-                <p>After six wonderful years together, on a crisp evening December 20, 2015, after dining at Eleven Madison Park, Natasha and Thomas were asked if they would like to have a private tour of the kitchen for the final dessert of apple caramel drizzled over shaved ice.</p>
-                <br />
-                <p>Next they were escorted to a table at the back, and by the dim glow of candelight to the tune of "When I fall in Love" by Nat King Cole Natasha's Photo album highlighting their years together was brought to the table. As Natasha began to realize what was going on, Thomas got down on one knee and asked for her hand in marriage.</p>
+        <div class="split content-left padding-left-50">
+            <div class="center">
+                <div class="clear width-two-thirds">
+                    <p>After six wonderful years together, on a crisp evening December 20, 2015, after dining at Eleven Madison Park, Natasha and Thomas were asked if they would like to have a private tour of the kitchen for the final dessert of apple caramel drizzled over shaved ice.</p>
+                    <br />
+                    <p>Next they were escorted to a table at the back, and by the dim glow of candelight to the tune of "When I fall in Love" by Nat King Cole Natasha's Photo album highlighting their years together was brought to the table. As Natasha began to realize what was going on, Thomas got down on one knee and asked for her hand in marriage.</p>
+                </div>
             </div>
         </div>
     </section>

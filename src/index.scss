@@ -9,7 +9,8 @@
 }
 
 html {
-  background: $navy;
+  //background: $navy;
+  background: $dark-navy;
 }
 
 html,body {
@@ -68,12 +69,15 @@ header {
     position: absolute;
     font-size: 4em;
     text-shadow: 1px 0px 0px black;
-    font-family: 'Rochester', cursive;
+    font-family: 'Qaskin Black', cursive;
     color: $gold;
     float: right;
     top: 5%;
     left: 5%;
     text-align: right;
+    .bride-name, .groom-name {
+      position: relative;
+    }
   }
   @media (max-width: 800px) {
     .names {
@@ -82,16 +86,35 @@ header {
   }
 }
 
+// .gold-text {
+//     color:#c3a343;
+//     -webkit-text-fill-color: transparent;
+//     background: -webkit-linear-gradient(transparent, transparent),
+//     url(http://www.theblogmarket.co/wp-content/uploads/2015/11/GOLD-11.jpg) repeat;
+//     background: -o-linear-gradient(transparent, transparent);
+//     background-clip: text;
+//     -webkit-background-clip: text;
+//     h1:after {
+//       background: none;
+//       content: attr(data-text);
+//       left: 0;
+//       position: absolute;
+//       text-shadow: 1px 0px 0px black;
+//       top: 0;
+//       z-index: -3;
+//   }
+// }
+
 section {
-  padding: 10px 10px 60px 10px;
-  margin: 50px 0px;
+  padding: 60px 10px 60px 10px;
+  //margin: 50px 0px;
   overflow: hidden;
 
   h1 {
-    font-family: 'Rochester', cursive;
+    font-family: 'Qaskin Black', cursive;
     color: $gold;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 3.5em;
     padding: 50px;
   }
 
@@ -194,6 +217,22 @@ section {
   }
 }
 
+@media (min-width: 800px) {
+  .content-right > * {
+    float: right;
+    clear: both;
+  }
+  .padding-right-50 {
+    padding-right: 50px;
+  }
+  .content-left > * {
+    float: left;
+    clear: both;
+  }
+  .padding-left-50 {
+    padding-left: 50px;
+  }
+}
 
 
 .split {
@@ -215,8 +254,10 @@ section {
   }
 }
 
-.width-two-thirds {
-  width: 67%;
+@media (max-width: 800px) {
+  .width-two-thirds {
+    max-width: 67%;
+  }
 }
 
 .width-half {
@@ -229,6 +270,12 @@ section {
 
 .width-max-500 {
   max-width: 500px;
+}
+
+@media (min-width: 800px) {
+  .width-400 {
+    width: 400px;
+  }
 }
 
 .clearfix::after { 

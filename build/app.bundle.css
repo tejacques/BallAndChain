@@ -54,9 +54,10 @@ table {
 
 .menu {
   position: fixed;
+  z-index: 1;
   left: 100%;
   opacity: 0%;
-  background-color: #113;
+  background-color: #171745;
   width: 0px;
   height: 100%;
   line-height: 1.5em;
@@ -208,7 +209,7 @@ table {
   box-sizing: border-box; }
 
 html {
-  background: #225; }
+  background: #171745; }
 
 html, body {
   margin: 0;
@@ -252,25 +253,26 @@ header {
     position: absolute;
     font-size: 4em;
     text-shadow: 1px 0px 0px black;
-    font-family: 'Rochester', cursive;
+    font-family: 'Qaskin Black', cursive;
     color: #C69460;
     float: right;
     top: 5%;
     left: 5%;
     text-align: right; }
+    header .names .bride-name, header .names .groom-name {
+      position: relative; }
   @media (max-width: 800px) {
     header .names {
       font-size: 2.75em; } }
 
 section {
-  padding: 10px 10px 60px 10px;
-  margin: 50px 0px;
+  padding: 60px 10px 60px 10px;
   overflow: hidden; }
   section h1 {
-    font-family: 'Rochester', cursive;
+    font-family: 'Qaskin Black', cursive;
     color: #C69460;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 3.5em;
     padding: 50px; }
   section h3 {
     font-family: 'Playfair Display', Cambria, Cochin, Georgia, Times, Times New Roman, serif;
@@ -346,6 +348,18 @@ section {
     .circle-photo .description {
       font-size: 1.5em; } }
 
+@media (min-width: 800px) {
+  .content-right > * {
+    float: right;
+    clear: both; }
+  .padding-right-50 {
+    padding-right: 50px; }
+  .content-left > * {
+    float: left;
+    clear: both; }
+  .padding-left-50 {
+    padding-left: 50px; } }
+
 .split {
   width: 100%; }
 
@@ -360,8 +374,9 @@ section {
     float: left;
     width: 50%; } }
 
-.width-two-thirds {
-  width: 67%; }
+@media (max-width: 800px) {
+  .width-two-thirds {
+    max-width: 67%; } }
 
 .width-half {
   width: 50%; }
@@ -371,6 +386,10 @@ section {
 
 .width-max-500 {
   max-width: 500px; }
+
+@media (min-width: 800px) {
+  .width-400 {
+    width: 400px; } }
 
 .clearfix::after {
   content: " ";
