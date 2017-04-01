@@ -209,7 +209,8 @@ table {
   box-sizing: border-box; }
 
 html {
-  background: #171745; }
+  background: url("/img/rough-cloth-light.png");
+  background-color: #121240; }
 
 html, body {
   margin: 0;
